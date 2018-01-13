@@ -1,0 +1,274 @@
+/*
+ * Globals
+ */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background: #27292D;
+  border: 1px solid #282B2F;
+}
+
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+  background-color: #1E2124;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+/*
+ * Header
+ */
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  border-bottom: 8rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  color: rgb(255, 115, 0);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: rgb(255, 115, 0);
+}
+
+.card-header, .btn-secondary, .thead-default th {
+	background: #2E3136;
+}
+
+.jumbotron, .card-body, .breadcrumb, .nav-tabs .nav-link.active {
+	background: #36393E;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/*
+ * Slideshow
+ */
+#slideshow {
+    padding: 0;
+    margin-top: 4rem;
+    border-color: #36393E;
+    width: 100%;
+    height: 200px;
+}
+
+.carousel-inner > .item {
+  height: 100vh;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 800px;
+  width: auto;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel {
+  overflow: hidden;
+}
+ 
+/*
+ * Cover
+ */
+.cover {
+  margin-top: 4rem;
+  padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.cover, .inner {
+    align-content: left;
+}
+
+.card {
+  border: none;
+  margin-top: 2rem;
+}
+
+.card-header .main {
+  vertical-align: middle;
+}
+
+.nmclc {
+  margin-bottom: 2rem;
+}
+
+#main-content {
+    position: relative;
+    min-height: 1px;
+    margin-top: 2rem;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+  align-content: center;
+}
+
+/*
+ * Affix and center
+ */
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    top: 0;
+  }
+  .mastfoot {
+    bottom: 0;
+  }
+
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+.btn-primary {
+	background: rgb(255, 115, 0);
+	border: none;
+}
+
+.btn-primary:hover {
+	background: rgb(255, 155, 0);
+	border: none;
+}
+
+.btn-primary.disabled {
+	background: rgb(110, 110, 110);
+	border: none;
+}
+
+.btn-secondary {
+	border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.btn-group {
+	margin-bottom: 15px;
+}
+
+.table thead th {
+	border: 0px;
+	color: #FFF;
+}
+
+.table tbody+tbody, tr {
+	border-top: 2px solid #1E2124;
+}
+
+.table-danger, .table-danger>td, .table-danger>th, .alert-danger {
+	background: #F04747;
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 60rem;
+  }
+}
+
+@media screen and (max-width: 578px) {
+	#sidebar, .discord {
+		margin-top: 15px;
+	}
+}

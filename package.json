@@ -1,0 +1,19 @@
+{
+  "name": "modding-website",
+  "version": "1.0.0",
+  "description": "My Minecraft modding website for hosting projects and general info.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "website",
+    "express.js",
+    "maven",
+    "minecraft",
+    "modding"
+  ],
+  "author": "Ole Henrik Stabell",
+  "license": "MIT",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
